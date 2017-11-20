@@ -1,65 +1,37 @@
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+首先在oschina上面创建项目 或者github都行
+1、打开Git  Bash,将目录切换到你的项目所在的文件夹
+
+2、复制git仓库地址 以https为例 提示输入用户名和密码输入即可
+
+3、运行命令 git clone https://git.oschina.NET/xxxxxx/xxxxx.git 并会发现多了一个文件夹（oschina的项目名），cd 进这个文件夹
+
+4、复制已有的项目到该文件夹，
+
+5、运行命令  git add -A .  注意后面有一个点   
+
+6、运行命令  git commit -am "对代码的有关说明"
+
+7、git push origin   
+
+8、git pull   拉取分支代码
 
 
 
 
-我们修复了一个bug，哈哈我们修复了一个bug，哈哈我们修复了一个bug，哈哈我们修复了一个bug，哈哈我们修复了一个bug，哈哈
 
-本地的代码和服务器代码发生冲突：
+本地的代码和服务器代码发生冲突（github）：
 两者合并
-git stash
-git pull
-git stash pop
+git stash        暂存本地文件
+git pull         拉取git文件
+git stash pop    合并两者文件（并解决冲突）
+
+
+git add .        提交文件
+git commit       添加文件说明
+git push         提交到git
+
+
 代码库覆盖本地：
-git reset --hard
-git pull本地的代码和服务器代码发生冲突：
-两者合并
-git stash
-git pull
-git stash pop
-代码库覆盖本地：
-git reset --hard
-git pull
-
-
-干干净
-阿是大法师地方
-干干净
-答复多少
-阿萨德发生的  
-干干净
-<<<<<<< HEAD
-十大佛挡杀佛
-干干净啊大法师地方
- 阿萨德发是的
-干干净手动阀多少
- 阿迪发多少
-好啊还哦打发哦收到发生地方阿萨德
-=======
-
-<<<<<<< Updated upstream
-干干净啊大法师地方
-=======
-adfd
-
-ads
-f
-asd
-f
-as
-df
->>>>>>> Stashed changes
-
-saasd
-干干净
-
-干干净
-dsafffffffffffffffffffffffffff
-好啊还dasfff哦打发哦收到发生地方阿萨德
->>>>>>> 367da039801c3fcc1e67d2026461b2b3f6937e90
-
-
-撒旦发生地方
-
-
-asdfffffffffffffffffffffffffffffffffffffffffffffffffffffff
+git log         查看提交日志
+git reflog      查看提交日志
+git reset  --hard 回滚码  （“--”为双短杠，回滚码通过日志查看）
